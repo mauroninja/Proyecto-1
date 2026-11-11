@@ -137,6 +137,4 @@ En el repositorio, ve a **Settings** → **Collaborators** → **Add people** y 
 
 | Nombre | Rol |
 |---|---|
-| Nombre 1 | |
-| Nombre 2 | |
-| Nombre 3 | |
+| Nombre Andres Mauricio Torres | Programador |
