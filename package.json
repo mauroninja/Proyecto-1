@@ -1,0 +1,12 @@
+{
+  "name": "proyecto-docker-entrega1",
+  "version": "1.0.0",
+  "description": "Entrega 1 - Dos contenedores Docker comunicados: Node.js + Nginx",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
