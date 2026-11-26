@@ -1,0 +1,18 @@
+# Levanta Jenkins en un contenedor aparte del proyecto.
+# Uso:  docker compose -f docker-compose.jenkins.yml up -d --build
+# Interfaz: http://localhost:8081  (el 8080 lo usa nginx del proyecto)
+services:
+  jenkins:
+    build: ./jenkins
+    container_name: jenkins
+    user: root
+    restart: unless-stopped
+    ports:
+      - "8081:8080"
+      - "50000:50000"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+
+volumes:
+  jenkins_home:
